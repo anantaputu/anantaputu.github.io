@@ -15,6 +15,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+
+    <!-- AOS  -->
+    \
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My Css -->
     <link rel="stylesheet" href="bootstrap5/css/style.css" />
   </head>
@@ -78,7 +83,7 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-in">
         <div class="row text-center mb-5">
           <div class="col">
             <h2>About</h2>
@@ -114,7 +119,12 @@
             </div>
           </div>
           <div class="row justify-content-around">
-            <div class="col-md-4 mb-3">
+            <div
+              class="col-md-4 mb-3"
+              data-aos="flip-left"
+              data-aos-delay="400"
+              data-aos-duration="500"
+            >
               <div class="card">
                 <img
                   HEAD
@@ -127,7 +137,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div
+              class="col-md-4 mb-3"
+              data-aos="flip-left"
+              data-aos-delay="600"
+              data-aos-duration="600"
+            >
               <div class="card">
                 <img
                   HEAD
@@ -140,7 +155,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div
+              class="col-md-4 mb-3"
+              data-aos="flip-left"
+              data-aos-delay="800"
+              data-aos-duration="700"
+            >
               <div class="card">
                 <img
                   HEAD
@@ -266,6 +286,13 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL =
